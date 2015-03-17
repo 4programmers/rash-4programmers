@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 
 -- Use the following commands to create the database and the users:
 
@@ -8,6 +11,9 @@
 --grant all privileges on $DATABASE$.* to '$USERNAME$'@'$HOSTSPEC$';
 
 
+<<<<<<< HEAD
+>>>>>>> 0fc100197a68d98d974026081f808031e2fea442
+=======
 >>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 create table $QUOTETABLE$ (id int NOT NULL auto_increment primary key,
 			   quote text NOT NULL,

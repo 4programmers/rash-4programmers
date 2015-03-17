@@ -7,15 +7,21 @@ div#site_all{
 }
 a, a:visited, a:hover, a:visited:hover{
 <<<<<<< HEAD
+<<<<<<< HEAD
 	color: #000000;
 }
 a#site_nav_admin{
 	color: #909090;
 =======
+=======
+>>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 	color: #c08000;
 }
 a#site_nav_admin{
 	color: #c08000;
+<<<<<<< HEAD
+>>>>>>> 0fc100197a68d98d974026081f808031e2fea442
+=======
 >>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 }
 a#site_nav_logout{
@@ -61,6 +67,7 @@ div.quote_whole:nth-child(odd) {
   background-color:pink;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /* searchpage */
 input#search_submit-button{
@@ -71,6 +78,8 @@ select#search_sortby-dropdown{
 }
 select#search_limit-dropdown{
 =======
+=======
+>>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 /* searchpage */
 input#search_submit-button{
 	background-color: #c08000;
@@ -83,13 +92,20 @@ select#search_sortby-dropdown{
 }
 select#search_limit-dropdown{
 	background-color: #f0f0f0;
+<<<<<<< HEAD
+>>>>>>> 0fc100197a68d98d974026081f808031e2fea442
+=======
 >>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 }
 
 
 .hilight_news_entry {
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color:#f0fff0;
+=======
+  background-color:#fff0f0;
+>>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 =======
   background-color:#fff0f0;
 >>>>>>> 0fc100197a68d98d974026081f808031e2fea442
@@ -123,7 +139,11 @@ div#site_admin_nav_upper_linkbar{
 }
 div#site_admin_nav_lower_infobar{
 <<<<<<< HEAD
+<<<<<<< HEAD
 	background-color: #909090;
+=======
+	background-color: #c08000;
+>>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 =======
 	background-color: #c08000;
 >>>>>>> 0fc100197a68d98d974026081f808031e2fea442
@@ -156,11 +176,14 @@ html>body div#site_admin_nav{ /* hack for firefox, disabled in opera and ie */
 
 input#admin_login_username-box{
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 input#admin_login_password-box{
 }
 input#admin_login_submit-button{
 =======
+=======
+>>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 	background-color: #f0f0f0;
 }
 input#admin_login_password-box{
@@ -168,6 +191,9 @@ input#admin_login_password-box{
 }
 input#admin_login_submit-button{
 	background-color: #c08000;
+<<<<<<< HEAD
+>>>>>>> 0fc100197a68d98d974026081f808031e2fea442
+=======
 >>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 }
 
@@ -183,7 +209,11 @@ div.site_nav_lower_linkbar{
 }
 div#site_nav_upper{
 <<<<<<< HEAD
+<<<<<<< HEAD
 	background-color: #909090;
+=======
+	background-color: #c08000;
+>>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 =======
 	background-color: #c08000;
 >>>>>>> 0fc100197a68d98d974026081f808031e2fea442
@@ -210,6 +240,10 @@ div#site_nav{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 =======
 
 >>>>>>> 0fc100197a68d98d974026081f808031e2fea442
@@ -221,13 +255,19 @@ div#add_outputmsg_quote{
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 div.quote_pagenums{
 	text-align: center;
 }
 =======
+=======
+>>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 
 
 div.quote_pagenums{
 	text-align: center;
 }
+<<<<<<< HEAD
+>>>>>>> 0fc100197a68d98d974026081f808031e2fea442
+=======
 >>>>>>> 0fc100197a68d98d974026081f808031e2fea442

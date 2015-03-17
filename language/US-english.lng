@@ -48,7 +48,10 @@ $lang = array (
 'cannot_vote_2' => 'You must login before voting',
 'no_quote' => 'Sorry, no such quote',
 <<<<<<< HEAD
+<<<<<<< HEAD
 'quote_nr' => 'Quote',
+=======
+>>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 =======
 >>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 'flag_quote_title' => "Flag a quote",
@@ -81,17 +84,23 @@ $lang = array (
 'menu_browse' => "Browse",
 'menu_random' => "Random",
 <<<<<<< HEAD
+<<<<<<< HEAD
 'menu_random2' => "Random",
 'menu_bottom' => "Bottom",
 'menu_top' => "Top",
 'menu_search' => "Search",
 'menu_contribute' => "Add",
 =======
+=======
+>>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 'menu_random2' => "Random&gt;0",
 'menu_bottom' => "Bottom",
 'menu_top' => "Top",
 'menu_search' => "Search",
 'menu_contribute' => "Contribute",
+<<<<<<< HEAD
+>>>>>>> 0fc100197a68d98d974026081f808031e2fea442
+=======
 >>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 'page_first' => "First",
 'page_last' => "Last",

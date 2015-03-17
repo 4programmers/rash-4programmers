@@ -67,12 +67,18 @@ $db = get_db($CONFIG, $TEMPLATE);
 autologin();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 $mainmenu = array(array('url' => '?latest', 'id' => 'site_nav_latest', 'txt' => 'menu_latest'),
 =======
+=======
+>>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 $mainmenu = array(array('url' => './', 'id' => 'site_nav_home', 'txt' => 'menu_home'),
 		  array('url' => '?latest', 'id' => 'site_nav_latest', 'txt' => 'menu_latest'),
 		  //array('url' => '?browse', 'id' => 'site_nav_browse', 'txt' => 'menu_browse'),
 		  array('url' => '?random', 'id' => 'site_nav_random', 'txt' => 'menu_random'),
+<<<<<<< HEAD
+>>>>>>> 0fc100197a68d98d974026081f808031e2fea442
+=======
 >>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 		  array('url' => '?random2', 'id' => 'site_nav_random2', 'txt' => 'menu_random2'),
 		  array('url' => '?bottom', 'id' => 'site_nav_bottom', 'txt' => 'menu_bottom'),
@@ -1193,12 +1199,15 @@ if ($page[1] === 'voteable' && isset($_SESSION['voteip']))
     $voteable = ' AND q.id NOT IN (SELECT t.quote_id FROM '.db_tablename('tracking').' t WHERE t.quote_id=q.id AND t.user_ip='.$db->quote($_SESSION['voteip']).') ';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 // BEGIN MSMCONTENT
 if ($page[0] === '') {
     $page[0] = 'latest';
 }
 // END MSMCONTENT
 
+=======
+>>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 =======
 >>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 switch($page[0])

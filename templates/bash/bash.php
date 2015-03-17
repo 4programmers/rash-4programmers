@@ -3,6 +3,7 @@
 class BashTemplate extends BaseTemplate {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     function printheader($title, $topleft='QMS', $topright='Quote Management System')
     {
         ob_start();
@@ -70,6 +71,8 @@ class BashTemplate extends BaseTemplate {
 
     }
 =======
+=======
+>>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 function printheader($title, $topleft='QMS', $topright='Quote Management System')
 {
 ob_start();
@@ -138,13 +141,20 @@ function printfooter($dbstats=null)
 <?php
 
 }
+<<<<<<< HEAD
+>>>>>>> 0fc100197a68d98d974026081f808031e2fea442
+=======
 >>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 
 } // BashTemplate
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 $TEMPLATE = new BashTemplate;
+=======
+$TEMPLATE = new BashTemplate;
+>>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 =======
 $TEMPLATE = new BashTemplate;
 >>>>>>> 0fc100197a68d98d974026081f808031e2fea442
