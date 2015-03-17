@@ -1,0 +1,291 @@
+div#site_all {
+  font-family: Arial;
+  margin: 0;
+  padding: 0; }
+  div#site_all div#site_nav_4p_upper_wrapper {
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAJ0lEQVQIW2Ps3MD5n0+AlQEEPn34zcA4/QDffxADBEASmALIWkCqAPDNEnJoA/jxAAAAAElFTkSuQmCC");
+    border-bottom: 1px solid #888;
+    color: #fff;
+    font-size: 12px; }
+  div#site_all div#site_nav_4p_lower_wrapper {
+    background: url("http://4programmers.net/template/img/background.png");
+    border-bottom: 1px solid #ddd; }
+  div#site_all div#site_nav_upper_qms {
+    display: none; }
+  div#site_all div#site_nav_upper_qms-long {
+    font-size: 12px; }
+  div#site_all div#site_nav_upper,
+  div#site_all div.site_nav_lower,
+  div#site_all #main_wrapper,
+  div#site_all #site_admin_nav_lower_infobar,
+  div#site_all #add_all,
+  div#site_all .search_all,
+  div#site_all #admin_queue_all,
+  div#site_all #flag_quote_all,
+  div#site_all #admin_flags_all,
+  div#site_all #import_data_all,
+  div#site_all #admin_add-news_all,
+  div#site_all #editnews_all,
+  div#site_all #admin_users_all,
+  div#site_all #edit_user_all,
+  div#site_all #admin_add-user_all,
+  div#site_all #admin_change-pw_all,
+  div#site_all #editquote_all {
+    width: 96.5%;
+    max-width: 1600px;
+    margin: auto;
+    background: none; }
+  div#site_all div.site_nav_lower {
+    background: url("http://static.4programmers.net/template/img/logo.png") left center no-repeat; }
+    div#site_all div.site_nav_lower div.site_nav_lower_linkbar {
+      height: 47px; }
+      div#site_all div.site_nav_lower div.site_nav_lower_linkbar a {
+        color: #3c3c3c;
+        font-family: 'Open Sans',Arial,sans-serif;
+        font-size: 13.31px;
+        height: 100%;
+        padding: 0 6px;
+        display: inline-block;
+        text-decoration: none;
+        line-height: 47px;
+        margin-left: 10px; }
+        div#site_all div.site_nav_lower div.site_nav_lower_linkbar a:hover {
+          color: #97c00e; }
+      div#site_all div.site_nav_lower div.site_nav_lower_linkbar .sep {
+        display: none; }
+  div#site_all #site_admin_nav_upper_linkbar {
+    border-top: 1px solid #ddd; }
+    div#site_all #site_admin_nav_upper_linkbar div.site_nav_lower {
+      background: none; }
+  div#site_all #site_admin_nav_lower {
+    color: #7f7f7f;
+    background: #3e3e3e;
+    font-size: 11px;
+    padding: 5px 0; }
+  div#site_all .quote_pagenums {
+    margin: 15px 0;
+    text-align: left; }
+    div#site_all .quote_pagenums > span.nopage, div#site_all .quote_pagenums > span.sep, div#site_all .quote_pagenums .skipfwd, div#site_all .quote_pagenums .skipback, div#site_all .quote_pagenums .noellipsis, div#site_all .quote_pagenums span.last, div#site_all .quote_pagenums span.first {
+      display: none; }
+    div#site_all .quote_pagenums > * {
+      border-radius: 5px;
+      color: #444;
+      padding: 5px 10px;
+      display: inline-block;
+      font-size: 10.8px;
+      margin-right: 3px; }
+    div#site_all .quote_pagenums > a {
+      background-color: #ddd;
+      text-decoration: none; }
+      div#site_all .quote_pagenums > a:hover {
+        background: #ccc; }
+    div#site_all .quote_pagenums > span.currpage {
+      background-color: #444;
+      color: #fff; }
+  div#site_all #quote_list {
+    border: 1px solid #c7c7c7;
+    border-radius: 3px;
+    background-color: #e2e7e1;
+    clear: both;
+    box-shadow: inset 1px 1px #FFF;
+    padding: 10px; }
+    div#site_all #quote_list div.quote_whole {
+      background: #fff;
+      border-top: 1px solid #ddd;
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      padding: 0; }
+      div#site_all #quote_list div.quote_whole .quote_head {
+        padding-top: 5px;
+        padding-left: 10px; }
+        div#site_all #quote_list div.quote_whole .quote_head a::before {
+          background: url("http://static.4programmers.net/module/forum/template/img/sprites.png?v=2") no-repeat 0 -742px;
+          width: 12px;
+          height: 9px;
+          display: inline-block;
+          content: '';
+          margin-right: 3px; }
+        div#site_all #quote_list div.quote_whole .quote_head a {
+          font-size: 12px; }
+        div#site_all #quote_list div.quote_whole .quote_head .quote_date {
+          color: #666;
+          font-size: 12px; }
+      div#site_all #quote_list div.quote_whole .quote_quote {
+        padding: 5px 10px; }
+      div#site_all #quote_list div.quote_whole:nth-child(odd) {
+        background: #fafafa; }
+      div#site_all #quote_list div.quote_whole:first-child {
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px; }
+      div#site_all #quote_list div.quote_whole:last-child {
+        border-bottom: 1px solid #ddd;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px; }
+      div#site_all #quote_list div.quote_whole .quote_option-bar {
+        float: right;
+        margin: 10px;
+        font-size: 24px; }
+        div#site_all #quote_list div.quote_whole .quote_option-bar span.quote_plus, div#site_all #quote_list div.quote_whole .quote_option-bar span.quote_minus {
+          visibility: hidden; }
+        div#site_all #quote_list div.quote_whole .quote_option-bar > * {
+          display: block;
+          float: none;
+          text-align: center; }
+        div#site_all #quote_list div.quote_whole .quote_option-bar a {
+          text-decoration: none;
+          color: #999;
+          background: none; }
+          div#site_all #quote_list div.quote_whole .quote_option-bar a:hover {
+            color: #666; }
+      div#site_all #quote_list div.quote_whole .quote_bottom_bar {
+        background-color: #ececec;
+        padding: 5px;
+        border-top: 1px solid #ddd;
+        text-align: right;
+        clear: right; }
+      div#site_all #quote_list div.quote_whole .quote_flag, div#site_all #quote_list div.quote_whole .quote_edit {
+        opacity: .9;
+        border: 1px solid transparent;
+        padding: 4px;
+        border-radius: 3px;
+        height: 16px;
+        display: inline-block; }
+        div#site_all #quote_list div.quote_whole .quote_flag::before, div#site_all #quote_list div.quote_whole .quote_edit::before {
+          width: 16px;
+          height: 16px;
+          display: inline-block;
+          content: "";
+          vertical-align: middle; }
+        div#site_all #quote_list div.quote_whole .quote_flag:hover, div#site_all #quote_list div.quote_whole .quote_edit:hover {
+          border: 1px solid #ddd;
+          opacity: 1; }
+        div#site_all #quote_list div.quote_whole .quote_flag::after, div#site_all #quote_list div.quote_whole .quote_edit::after {
+          content: attr(title);
+          display: inline-block;
+          font-size: 11px;
+          text-indent: 0;
+          color: black;
+          vertical-align: middle;
+          margin-left: 5px; }
+      div#site_all #quote_list div.quote_whole .quote_flag::before {
+        background: url("http://static.4programmers.net/module/forum/template/img/user-shield.png"); }
+      div#site_all #quote_list div.quote_whole .quote_edit::before {
+        background: url("http://static.4programmers.net/module/forum/template/img/edit-subject.png"); }
+
+textarea, input[type=text], input[type=password], select {
+  padding: 4px 6px 4px 6px;
+  border: 2px solid #ddd;
+  font-family: "Trebuchet MS",Arial,Verdana,Helvetica,sans-serif;
+  border-radius: 3px;
+  background-color: #fff;
+  font-size: 13px;
+  line-height: 18px;
+  padding-left: 5px;
+  padding-right: 5px; }
+
+input[type=submit], input[type=reset] {
+  font-weight: normal;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #fff;
+  font-family: 'Open Sans',Arial,sans-serif;
+  box-shadow: inset 1px 1px #fdcda7;
+  border: 1px solid #fd814f;
+  background: #ff723a;
+  background: -moz-linear-gradient(top, #ff723a 0, #ff8251 48%, #ff4a00 50%, #ff4a00 99%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff723a), color-stop(48%, #ff8251), color-stop(50%, #ff4a00), color-stop(99%, #ff4a00));
+  background: -webkit-linear-gradient(top, #ff723a 0, #ff8251 48%, #ff4a00 50%, #ff4a00 99%);
+  background: -o-linear-gradient(top, #ff723a 0, #ff8251 48%, #ff4a00 50%, #ff4a00 99%);
+  background: -ms-linear-gradient(top, #ff723a 0, #ff8251 48%, #ff4a00 50%, #ff4a00 99%);
+  background: linear-gradient(to bottom, #ff723a 0, #ff8251 48%, #ff4a00 50%, #ff4a00 99%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff723a',endColorstr='#ff4a00',GradientType=0); }
+
+input[type=reset] {
+  background: #d00;
+  box-shadow: inset 1px 1px rgba(255, 255, 255, 0.8);
+  border: 1px solid #d00; }
+
+#add_all [type=reset],
+.search_all [type=reset],
+#flag_quote_all [type=reset],
+#import_data_all [type=reset],
+#admin_add-news_all [type=reset],
+#editnews_all [type=reset],
+#admin_users_all [type=reset],
+#edit_user_all [type=reset],
+#admin_add-user_all [type=reset],
+#admin_change-pw_all [type=reset],
+#editquote_all [type=reset] {
+  display: none; }
+#add_all form, #add_all textarea,
+.search_all form,
+.search_all textarea,
+#flag_quote_all form,
+#flag_quote_all textarea,
+#import_data_all form,
+#import_data_all textarea,
+#admin_add-news_all form,
+#admin_add-news_all textarea,
+#editnews_all form,
+#editnews_all textarea,
+#admin_users_all form,
+#admin_users_all textarea,
+#edit_user_all form,
+#edit_user_all textarea,
+#admin_add-user_all form,
+#admin_add-user_all textarea,
+#admin_change-pw_all form,
+#admin_change-pw_all textarea,
+#editquote_all form,
+#editquote_all textarea {
+  margin-bottom: 10px; }
+#add_all input[name=preview],
+.search_all input[name=preview],
+#flag_quote_all input[name=preview],
+#import_data_all input[name=preview],
+#admin_add-news_all input[name=preview],
+#editnews_all input[name=preview],
+#admin_users_all input[name=preview],
+#edit_user_all input[name=preview],
+#admin_add-user_all input[name=preview],
+#admin_change-pw_all input[name=preview],
+#editquote_all input[name=preview] {
+  border-color: #80a41a;
+  background: #80a41a;
+  box-shadow: inset 1px 1px rgba(255, 255, 255, 0.8); }
+
+#admin_queue_all form, #admin_flags_all form {
+  margin-bottom: 10px; }
+#admin_queue_all table, #admin_flags_all table {
+  margin-bottom: 20px; }
+
+.search_all div {
+  margin-top: 10px; }
+.search_all select {
+  margin-right: 10px; }
+
+#quote_origin-name,
+#add_title,
+#search_title,
+#admin_queue_title,
+#flag_quote_all h1,
+#admin_flag_title,
+#admin_add-news_title,
+#editnews_title,
+#admin_users_title,
+#edit_user-title,
+#admin_add-user_title,
+#admin_change-pw_title,
+#editquote_title {
+  color: #648017;
+  font-family: 'Open Sans',Arial,sans-serif;
+  font-weight: normal;
+  font-size: 21.60px; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+#site_nav_admin {
+  display: none; }

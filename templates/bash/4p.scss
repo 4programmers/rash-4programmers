@@ -1,0 +1,370 @@
+div#site_all {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+
+    div#site_nav_4p_upper_wrapper {
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAJ0lEQVQIW2Ps3MD5n0+AlQEEPn34zcA4/QDffxADBEASmALIWkCqAPDNEnJoA/jxAAAAAElFTkSuQmCC");
+        border-bottom: 1px solid #888;
+        color: #fff;
+        font-size: 12px;
+    }
+
+    div#site_nav_4p_lower_wrapper {
+        background: url("http://4programmers.net/template/img/background.png");
+        border-bottom: 1px solid #ddd;
+    }
+    div#site_nav_upper_qms {
+        display: none;
+    }
+    div#site_nav_upper_qms-long {
+        font-size: 12px;
+    }
+
+    div#site_nav_upper,
+    div.site_nav_lower,
+    #main_wrapper,
+    #site_admin_nav_lower_infobar,
+    #add_all,
+    .search_all,
+    #admin_queue_all,
+    #flag_quote_all,
+    #admin_flags_all,
+    #import_data_all,
+    #admin_add-news_all,
+    #editnews_all,
+    #admin_users_all,
+    #edit_user_all,
+    #admin_add-user_all,
+    #admin_change-pw_all,
+    #editquote_all {
+        width: 96.5%;
+        max-width: 1600px;
+        margin: auto;
+        background: none;
+    }
+
+    div.site_nav_lower {
+        background: url('http://static.4programmers.net/template/img/logo.png') left center no-repeat;
+
+        div.site_nav_lower_linkbar {
+            height: 47px;
+
+            a {
+                color: #3c3c3c;
+                font-family: 'Open Sans',Arial,sans-serif;
+                font-size: 13.31px;
+                height: 100%;
+                padding: 0 6px;
+                display: inline-block;
+                text-decoration: none;
+                line-height: 47px;
+                margin-left: 10px;;
+
+                &:hover {
+                    color: #97c00e;
+                }
+            }
+
+            .sep {
+                display: none;
+            }
+        }
+    }
+
+    #site_admin_nav_upper_linkbar {
+        border-top: 1px solid #ddd;
+        div.site_nav_lower {
+            background: none;
+        }
+    }
+
+    #site_admin_nav_lower {
+        color: #7f7f7f;
+        background: rgb(62, 62, 62);
+        font-size: 11px;
+        padding: 5px 0;
+    }
+
+    .quote_pagenums {
+        margin: 15px 0;
+        text-align: left;
+
+        >span.nopage, >span.sep, .skipfwd, .skipback, .noellipsis, span.last, span.first {
+            display: none;
+        }
+        >* {
+            border-radius: 5px;
+            color: #444;
+            padding: 5px 10px;
+            display: inline-block;
+            font-size: 10.8px;
+            margin-right: 3px;
+        }
+
+        >a {
+            background-color: #ddd;
+            text-decoration: none;
+
+            &:hover {
+                background: #ccc;
+            }
+        }
+        >span.currpage {
+            background-color: #444;
+            color: #fff;
+        }
+    }
+
+    #quote_list {
+        border: 1px solid #c7c7c7;
+        border-radius: 3px;
+        background-color: #e2e7e1;
+        clear: both;
+        box-shadow: inset 1px 1px #FFF;
+        padding: 10px;
+
+        div.quote_whole {
+            background: #fff;
+            border-top: 1px solid #ddd;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            padding: 0;
+
+            .quote_head {
+                padding-top: 5px;
+                padding-left: 10px;
+
+                a::before {
+                    background: url("http://static.4programmers.net/module/forum/template/img/sprites.png?v=2") no-repeat 0 -742px;
+                    width: 12px;
+                    height: 9px;
+                    display: inline-block;
+                    content: '';
+                    margin-right: 3px;
+                }
+                a {
+                    font-size: 12px;
+                }
+
+                .quote_date {
+                    color: #666;
+                    font-size: 12px;
+                }
+            }
+
+            .quote_quote {
+                padding: 5px 10px;
+            }
+
+            &:nth-child(odd) {
+                background: #fafafa;
+            }
+            &:first-child {
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+            }
+            &:last-child {
+                border-bottom: 1px solid #ddd;
+                border-bottom-left-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+
+            .quote_option-bar {
+                float: right;
+                margin: 10px;
+                font-size: 24px;
+
+                span.quote_plus, span.quote_minus {
+                    visibility: hidden;
+                }
+
+                .quote_rating {
+                }
+
+
+                >* {
+                    display: block;
+                    float: none;
+                    text-align: center;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #999;
+                    background: none;
+
+                    &:hover {
+                        color: #666;
+                    }
+                }
+            }
+
+            .quote_bottom_bar {
+                background-color: #ececec;
+                padding: 5px;
+                border-top: 1px solid #ddd;
+                text-align: right;
+                clear: right;
+            }
+
+
+            .quote_flag, .quote_edit {
+                opacity: .9;
+
+                &::before {
+                    width: 16px;
+                    height: 16px;
+                    display: inline-block;
+                    content: "";
+                    vertical-align: middle;
+                }
+
+                border: 1px solid transparent;
+                padding: 4px;
+                border-radius: 3px;
+                height: 16px;
+                display: inline-block;
+
+                &:hover {
+                    border: 1px solid #ddd;
+                    opacity: 1;
+                }
+
+                &::after {
+                    content: attr(title);
+                    display: inline-block;
+                    font-size: 11px;
+                    text-indent: 0;
+                    color: black;
+                    vertical-align: middle;
+                    margin-left: 5px;
+                }
+            }
+
+            .quote_flag {
+                &::before {
+                    background: url("http://static.4programmers.net/module/forum/template/img/user-shield.png");
+                }
+            }
+
+            .quote_edit {
+                &::before {
+                    background: url("http://static.4programmers.net/module/forum/template/img/edit-subject.png");
+                }
+            }
+
+
+        }
+    }
+}
+
+textarea,input[type=text], input[type=password],select {
+    padding: 4px 6px 4px 6px;
+    border: 2px solid #ddd;
+    font-family: "Trebuchet MS",Arial,Verdana,Helvetica,sans-serif;
+    border-radius: 3px;
+
+    background-color: #fff;
+    font-size: 13px;
+    line-height: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+input[type=submit], input[type=reset] {
+    font-weight: normal;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #fff;
+    font-family: 'Open Sans',Arial,sans-serif;
+    box-shadow: inset 1px 1px #fdcda7;
+    border: 1px solid #fd814f;
+    background: #ff723a;
+    background: -moz-linear-gradient(top,#ff723a 0,#ff8251 48%,#ff4a00 50%,#ff4a00 99%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#ff723a),color-stop(48%,#ff8251),color-stop(50%,#ff4a00),color-stop(99%,#ff4a00));
+    background: -webkit-linear-gradient(top,#ff723a 0,#ff8251 48%,#ff4a00 50%,#ff4a00 99%);
+    background: -o-linear-gradient(top,#ff723a 0,#ff8251 48%,#ff4a00 50%,#ff4a00 99%);
+    background: -ms-linear-gradient(top,#ff723a 0,#ff8251 48%,#ff4a00 50%,#ff4a00 99%);
+    background: linear-gradient(to bottom,#ff723a 0,#ff8251 48%,#ff4a00 50%,#ff4a00 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff723a',endColorstr='#ff4a00',GradientType=0);
+}
+input[type=reset] {
+    background: #d00;
+    box-shadow: inset 1px 1px rgba(255,255,255,0.8);
+    border: 1px solid #d00;
+}
+
+#add_all,
+.search_all,
+#flag_quote_all,
+#import_data_all,
+#admin_add-news_all,
+#editnews_all,
+#admin_users_all,
+#edit_user_all,
+#admin_add-user_all,
+#admin_change-pw_all,
+#editquote_all {
+    [type=reset] {
+        display: none;
+    }
+
+    form,textarea {
+        margin-bottom: 10px;
+    }
+
+    input[name=preview] {
+        border-color: #80a41a;
+        background: #80a41a;
+        box-shadow: inset 1px 1px rgba(255,255,255,.8);
+    }
+}
+
+#admin_queue_all, #admin_flags_all {
+    form {
+        margin-bottom: 10px;
+    }
+    table {
+        margin-bottom: 20px;
+    }
+}
+.search_all {
+    div {
+        margin-top: 10px;
+    }
+    select {
+        margin-right: 10px;
+    }
+}
+
+#quote_origin-name,
+#add_title,
+#search_title,
+#admin_queue_title,
+#flag_quote_all h1,
+#admin_flag_title,
+#admin_add-news_title,
+#editnews_title,
+#admin_users_title,
+#edit_user-title,
+#admin_add-user_title,
+#admin_change-pw_title,
+#editquote_title {
+    color: #648017;
+    font-family: 'Open Sans',Arial,sans-serif;
+    font-weight: normal;
+    font-size: 21.60px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+#site_nav_admin {
+    display: none;
+}

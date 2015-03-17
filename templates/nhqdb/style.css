@@ -1,0 +1,340 @@
+/* site-wide */
+div#site_all{
+	font-family: serif;
+	font-size: 12pt;
+	margin-left: 9%;
+	margin-right: 9%;
+}
+a, a:visited {
+	color: #004662;
+}
+a:hover, a:visited:hover {
+	color: #0080b0;
+	text-shadow: #006080 1px 0px;
+}
+a#site_nav_admin{
+	color: #0099d7;
+}
+a#site_admin_flag, a#site_admin_queue{
+	color: #336699;
+}
+
+select:focus,
+textarea:focus,
+input:focus {
+    -moz-box-shadow: 0px 0px 5px #ffff80;
+    -webkit-box-shadow: 0px 0px 5px #ffff80;
+    box-shadow: 0px 0px 5px #ffff80;
+    background-color: #fffff0;
+}
+
+
+table.admin_queue {
+    height: 100%;
+    width: 100%;
+}
+.admin_queue tr:nth-child(odd) {
+	background-color: #ffffff;
+}
+.admin_queue tr {
+	background-color: #f0f0f0;
+}
+.admin_queue .quote_delete,
+.admin_queue .quote_unflag,
+.admin_queue .quote_no,
+.admin_queue .quote_yes {
+  height: 100%;
+  padding:0;
+}
+.admin_queue .quote_delete:hover,
+.admin_queue .quote_no:hover {
+  background-color:pink;
+}
+.admin_queue .quote_unflag label:hover,
+.admin_queue .quote_yes label:hover {
+  background-color:lightgreen;
+}
+.quote_delete input[type=radio],
+.quote_unflag input[type=radio],
+.quote_no input[type=radio],
+.quote_yes input[type=radio] {
+    display:none;
+}
+.quote_delete label,
+.quote_unflag label,
+.quote_no label,
+.quote_yes label {
+    padding: 0 2em;
+    height: 100%;
+    display:block;
+}
+.quote_delete :checked + label,
+.quote_no :checked + label {
+    text-shadow: black 1px 0px;
+    background-color:pink;
+}
+.quote_unflag :checked + label,
+.quote_yes :checked + label {
+    text-shadow: black 1px 0px;
+    background-color:lightgreen;
+}
+
+.maybe_dupe {
+  font-weight: bold;
+}
+
+.dbtable td,
+.dbtable th {
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+.dbtable tr:hover {
+  background-color:#e8e8e8 !important;
+}
+.dbtable tr:nth-child(even) {
+  background-color:#f0f0f0;
+}
+
+/* quote-output styles */
+
+#editquote_outputmsg_quote {
+	font-family: courier new, lucida console, fixed;
+}
+
+div.quote_quote{
+	font-family: courier new, lucida console, fixed;
+	font-size: smaller;
+	padding-bottom: 5pt;
+}
+.quote_option-bar {
+    padding-bottom: 0.5em;
+}
+.quote_separator { display: none; }
+.quote_whole{
+    padding: 1em 0.25em;
+    font-family: courier new, lucida console, fixed;
+}
+.quote_whole:nth-child(odd) {
+	background-color:#f0f0f0;
+}
+a.quote_plus:hover {
+  background-color:lightgreen;
+  color: green;
+  border: 1px inset lightgreen;
+}
+a.quote_plus {
+  color: green;
+  border: 1px outset lightgreen;
+  display: inline-block;
+  min-width: 1.25em;
+  text-align:center;
+  text-decoration: none;
+  font-weight:bold;
+}
+
+a.quote_minus {
+  color: red;
+  border: 1px outset pink;
+  display: inline-block;
+  min-width: 1.25em;
+  text-align:center;
+  text-decoration: none;
+  font-weight:bold;
+}
+a.quote_minus:hover {
+  background-color:pink;
+  color: red;
+  border: 1px inset pink;
+}
+
+a.quote_flag {
+  color: #808080;
+  border: 1px outset black;
+  text-decoration: none;
+  display: inline-block;
+  float:right;
+  min-width: 1.25em;
+  text-align:center;
+}
+a.quote_flag:hover {
+  color: white;
+  background-color: #808080;
+  border: 1px inset black;
+}
+
+span.quote_flag {
+  display:none;
+}
+
+span.quote_plus,
+span.quote_minus,
+span.quote_plus:hover,
+span.quote_minus:hover {
+  background-color:none;
+  color: #c0c0c0;
+  border: 1px outset #c0c0c0;
+  display: inline-block;
+  min-width: 1.25em;
+  text-align:center;
+  text-decoration: none;
+  font-weight:bold;
+}
+
+
+.hilight_news_entry {
+  background-color:#fff0f0;
+}
+
+/* home_*: styles for the default homepage */
+
+.show_all_news {
+    text-align:right;
+}
+
+.news_date{
+	font-weight: bold;
+	margin-bottom: 0;
+	margin-top: 0.5em;
+}
+.news_news {
+    padding-left: 0.5em;
+    padding-bottom: 0.5em;
+}
+.news_news .space { display:none; }
+#home_greeting{
+	float: left;
+	width: 49%;
+}
+#news {
+	float: right;
+	width: 49%;
+	padding: 3px;
+	padding-top: 0.5em;
+}
+
+
+/* *admin*: used on administration pages and admin-only content */
+
+div#site_admin_nav{
+	position: relative;
+	margin-top: 90pt;
+	clear: both;
+	margin-top: -.1pt;
+}
+div#site_admin_nav_upper_linkbar{
+	background-color: #f0f0f0;
+}
+div#site_admin_nav_lower_infobar{
+	background-color: #0099d7;
+	text-align: right;
+	padding: 1px;
+}
+html>body div#site_admin_nav{ /* hack for firefox, disabled in opera and ie */
+	margin-top: 0pt;
+}
+
+
+/* site_nav_*: navigation on the top, for everyone */
+
+div.site_nav_lower{
+	background-color: #f0f0f0;
+}
+div.site_nav_lower_linkbar{
+	clear: both;
+	text-align: right;
+}
+div#site_nav_upper{
+	background-color: #0099d7;
+	padding: 3px;
+}
+div#site_nav_upper_qms{
+	position: relative;
+	z-index: 1;
+	float: left;
+	font-size: 14pt;
+	font-weight: bold;
+	font-style: italic;
+}
+div#site_nav_upper_qms-long{
+	position: relative;
+	z-index: 1;
+	float: right;
+	font-weight: bold;
+	font-size: 15pt;
+}
+div#site_nav{
+	position: relative;
+	z-index: 0;
+}
+
+#site_nav .sep,
+#site_admin_nav .sep {
+    color: #ccc;
+}
+.site_nav_lower_linkbar {
+    padding: 3px;
+}
+
+
+
+
+/* user-based functions */
+div#add_outputmsg_quote{
+	padding-top: 10pt;
+	font-family: monospace;
+	padding-bottom: 10pt;
+}
+
+
+
+div.quote_pagenums{
+	text-align: center;
+	margin-bottom: 0.5em;
+}
+.quote_pagenums .sep { display: none; }
+.quote_pagenums a,
+.quote_pagenums span {
+    display: inline-block;
+    width:2em;
+    min-width:2em;
+    padding:0.25em 1em;
+}
+.quote_pagenums a:hover {
+    background-color: lightgrey;
+    color: black;
+}
+.quote_pagenums .currpage {
+    font-weight: bold;
+    color: black;
+    background-color: #bfedff;
+}
+.quote_pagenums span {
+    color: #888;
+}
+.quote_pagenums .ellipsis {
+    color: #ccc;
+}
+
+.CAPTCHAquestion {
+    margin: 1em;
+    padding: 0.5em;
+    border: 3px solid #ddd;
+}
+
+table.users {
+    border-collapse:collapse;
+}
+table.users .curr {
+    background-color: #ddd;
+}
+
+table.users tr:hover td {
+    background-color: #e0e0e0;
+}
+
+table.users,
+table.users th,
+table.users td {
+    border: 1px solid lightgray;
+    padding: 0 0.5em;
+}
