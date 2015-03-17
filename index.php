@@ -194,7 +194,7 @@ function vote($quote_num, $method, $ajaxy=FALSE)
 {
     global $db, $TEMPLATE;
 
-    $ip = $_SERVER['REMOTE_ADDR'];
+    $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
     $sql = "SELECT quote_id FROM ".db_tablename('tracking')." WHERE user_ip=".$db->quote($ip).' AND quote_id='.$db->quote((int)$quote_num);
     $qid = $db->query($sql)->fetch();
 
@@ -537,7 +537,7 @@ function user_can_vote_quote($quoteid)
 {
     global $CONFIG, $db;
 
-    $ip = $_SERVER['REMOTE_ADDR'];
+    $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
     $row = $db->query('SELECT vote FROM '.db_tablename('tracking').' WHERE user_ip='.$db->quote($ip).' AND quote_id='.$db->quote((int)$quoteid))->fetch();
 
     if (isset($CONFIG['login_required']) && ($CONFIG['login_required'] == 1) && !isset($_SESSION['logged_in']))
@@ -1060,7 +1060,7 @@ function add_quote_do_inner()
     $quotxt = htmlspecialchars(trim($_POST["rash_quote"]));
     $innerhtml = $TEMPLATE->add_quote_outputmsg(mangle_quote_text($quotxt));
     $t = time();
-    $ip = $_SERVER['REMOTE_ADDR'];
+    $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
     if ($spamre && preg_match('/'.$spamre.'/', $quotxt)) {
 	$table = 'spamlog';
 	if (isset($CONFIG['spam_expire_time']) && ($CONFIG['spam_expire_time'] > 0)) {
@@ -1121,7 +1121,7 @@ function import_quotes_do_inner()
 	$quotxt = htmlspecialchars(trim($quotxt));
 	if (!(strlen($quotxt) < $CONFIG['min_quote_length'])) {
 	    $t = time();
-	    $ip = $_SERVER['REMOTE_ADDR'];
+	    $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
 	    if ($CONFIG['moderated_quotes']) {
 		$table = 'queue';
 	    } else {

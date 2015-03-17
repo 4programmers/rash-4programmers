@@ -105,17 +105,17 @@ function set_voteip($salt)
 	    $hash = $arr[1];
 	    if (preg_match("/^(([1-9]?[0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5]).){3}([1-9]?[0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$/", $addr)) {
 		if (md5($addr . $salt) != $hash)
-		    $addr = getenv("REMOTE_ADDR");
+		    $addr = getenv("HTTP_X_FORWARDED_FOR");
 		mk_cookie('voteip', $addr . '-' . md5($addr . $salt));
 		$_SESSION['voteip'] = $addr;
 	    } else {
 		/* illegal ip in cookie */
-		$addr = getenv("REMOTE_ADDR");
+		$addr = getenv("HTTP_X_FORWARDED_FOR");
 		mk_cookie('voteip', $addr . '-' . md5($addr . $salt));
 		$_SESSION['voteip'] = $addr;
 	    }
 	} else {
-	    $addr = getenv("REMOTE_ADDR");
+	    $addr = getenv("HTTP_X_FORWARDED_FOR");
 	    mk_cookie('voteip', $addr . '-' . md5($addr . $salt));
 	    $_SESSION['voteip'] = $addr;
 	}
