@@ -6,23 +6,10 @@ div#site_all{
 	margin-right: 9%;
 }
 a, a:visited, a:hover, a:visited:hover{
-<<<<<<< HEAD
-<<<<<<< HEAD
 	color: #000000;
 }
 a#site_nav_admin{
 	color: #909090;
-=======
-=======
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-	color: #c08000;
-}
-a#site_nav_admin{
-	color: #c08000;
-<<<<<<< HEAD
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 }
 a#site_nav_logout{
 	color: #000000;
@@ -66,8 +53,6 @@ div.quote_whole:nth-child(odd) {
 .quote_minus:hover {
   background-color:pink;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 /* searchpage */
 input#search_submit-button{
@@ -77,38 +62,11 @@ input#search_query-box{
 select#search_sortby-dropdown{
 }
 select#search_limit-dropdown{
-=======
-=======
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-/* searchpage */
-input#search_submit-button{
-	background-color: #c08000;
-}
-input#search_query-box{
-	background-color: #f0f0f0;
-}
-select#search_sortby-dropdown{
-	background-color: #f0f0f0;
-}
-select#search_limit-dropdown{
-	background-color: #f0f0f0;
-<<<<<<< HEAD
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 }
 
 
 .hilight_news_entry {
-<<<<<<< HEAD
-<<<<<<< HEAD
   background-color:#f0fff0;
-=======
-  background-color:#fff0f0;
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
-  background-color:#fff0f0;
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 }
 
 /* home_*: styles for the default homepage */
@@ -138,15 +96,7 @@ div#site_admin_nav_upper_linkbar{
 	background-color: #f0f0f0;
 }
 div#site_admin_nav_lower_infobar{
-<<<<<<< HEAD
-<<<<<<< HEAD
 	background-color: #909090;
-=======
-	background-color: #c08000;
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
-	background-color: #c08000;
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 	text-align: right;
 }
 html>body div#site_admin_nav{ /* hack for firefox, disabled in opera and ie */
@@ -175,26 +125,10 @@ html>body div#site_admin_nav{ /* hack for firefox, disabled in opera and ie */
 
 
 input#admin_login_username-box{
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
 input#admin_login_password-box{
 }
 input#admin_login_submit-button{
-=======
-=======
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-	background-color: #f0f0f0;
-}
-input#admin_login_password-box{
-	background-color: #f0f0f0;
-}
-input#admin_login_submit-button{
-	background-color: #c08000;
-<<<<<<< HEAD
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 }
 
 
@@ -208,15 +142,7 @@ div.site_nav_lower_linkbar{
 	text-align: right;
 }
 div#site_nav_upper{
-<<<<<<< HEAD
-<<<<<<< HEAD
 	background-color: #909090;
-=======
-	background-color: #c08000;
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
-	background-color: #c08000;
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 	padding: 3px;
 }
 div#site_nav_upper_qms{
@@ -239,14 +165,6 @@ div#site_nav{
 	z-index: 0;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
-
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 /* user-based functions */
 div#add_outputmsg_quote{
 	padding-top: 10pt;
@@ -254,20 +172,6 @@ div#add_outputmsg_quote{
 	padding-bottom: 10pt;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 div.quote_pagenums{
 	text-align: center;
 }
-=======
-=======
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-
-
-div.quote_pagenums{
-	text-align: center;
-}
-<<<<<<< HEAD
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442

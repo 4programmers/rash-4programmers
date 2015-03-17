@@ -238,15 +238,7 @@ abstract class BaseTemplate {
 
     function edit_quote_button($quoteid, $queue=0)
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
 	return '<a href="?'.urlargs(($queue ? 'editqueue' : 'edit'),'edit',$quoteid).'" class="quote_edit" title="'.lang('editquote').'"></a>';
-=======
-	return '<a href="?'.urlargs(($queue ? 'editqueue' : 'edit'),'edit',$quoteid).'" class="quote_edit" title="'.lang('editquote').'">[E]</a>';
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
-	return '<a href="?'.urlargs(($queue ? 'editqueue' : 'edit'),'edit',$quoteid).'" class="quote_edit" title="'.lang('editquote').'">[E]</a>';
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
     }
 
     function edit_quote_page($action, $quoteid, $quotetxt, $edited_quote_html='')
@@ -279,15 +271,7 @@ abstract class BaseTemplate {
 	$str .= '<form method="post" action="?'.urlargs('search','fetch').'">';
 	if ($fetched) { $str .= '<input type="submit" name="submit" value="'.lang('search_btn').'" id="search_submit-button">&nbsp;'; }
 	$str .= '<input type="text" name="search" size="28" id="search_query-box" value="'.$searchstr.'">&nbsp;';
-<<<<<<< HEAD
-<<<<<<< HEAD
 	if (!$fetched) { $str .= '<input type="submit" name="submit" value="'.lang('search_btn').'" id="search_submit-button">&nbsp;<div>'; }
-=======
-	if (!$fetched) { $str .= '<input type="submit" name="submit" value="'.lang('search_btn').'" id="search_submit-button">&nbsp;<br />'; }
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
-	if (!$fetched) { $str .= '<input type="submit" name="submit" value="'.lang('search_btn').'" id="search_submit-button">&nbsp;<br />'; }
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 	$str .= lang('search_sort').': <select name="sortby" size="1" id="search_sortby-dropdown">';
 	$str .= '<option selected>'.lang('search_opt_rating');
 	$str .= '<option>'.lang('search_opt_id');
@@ -301,25 +285,11 @@ abstract class BaseTemplate {
      <option>50
      <option>75
      <option>100
-<<<<<<< HEAD
-<<<<<<< HEAD
     </select></div>';
 
 	$str .= '</form>';
 
 //	$str .= '</div>';
-=======
-=======
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-    </select>';
-
-	$str .= '</form>';
-
-	$str .= '</div>';
-<<<<<<< HEAD
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 
 	return $str;
     }
@@ -343,15 +313,7 @@ abstract class BaseTemplate {
 
     function flag_queue_page($inner_html)
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
 	$str = '<div id=admin_flags_all><h1 id="admin_flag_title">'.lang('flag_quote_adminpage_title').'</h1>';
-=======
-	$str = '<h1 id="admin_flag_title">'.lang('flag_quote_adminpage_title').'</h1>';
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
-	$str = '<h1 id="admin_flag_title">'.lang('flag_quote_adminpage_title').'</h1>';
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 
 	$str .= '<form action="?'.urlargs('flag_queue','judgement').'" method="post">
 <table width="100%" class="admin_queue">';
@@ -365,15 +327,7 @@ abstract class BaseTemplate {
 <input type="submit" value="'.lang('flag_quote_adminpage_unflag_all_btn').'" name="unflag_all">
 <input type="submit" value="'.lang('flag_quote_adminpage_delete_all_btn').'" name="delete_all">
 '.lang('flag_quote_adminpage_verify').'<input type="checkbox" name="do_all" id="do_all"><label for="do_all"></label>
-<<<<<<< HEAD
-<<<<<<< HEAD
 </form></div>';
-=======
-</form>';
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
-</form>';
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 
 	return $str;
     }
@@ -431,15 +385,7 @@ abstract class BaseTemplate {
 
     function change_password_page()
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
 	return '  <div id=admin_change-pw_all><h1 id="admin_change-pw_title">'.lang('change_password_title').'</h1>
-=======
-	return '  <h1 id="admin_change-pw_title">'.lang('change_password_title').'</h1>
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
-	return '  <h1 id="admin_change-pw_title">'.lang('change_password_title').'</h1>
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
   <form action="?'.urlargs('change_pw','update',$_SESSION['userid']).'" method="post">
   <table>
   <tr><td>'.lang('change_password_oldpass').'</td><td><input type="password" name="old_password"></td></tr>
@@ -447,28 +393,12 @@ abstract class BaseTemplate {
   <tr><td>'.lang('change_password_verify').'</td><td><input type="password" name="verify_password"></td></tr>
   <tr><td></td><td><input type="submit" value="'.lang('change_password_submit_btn').'"></td></tr>
   </table>
-<<<<<<< HEAD
-<<<<<<< HEAD
   </form></div>';
-=======
-  </form>';
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
-  </form>';
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
     }
 
     function edit_user_page_form($id, $who, $username, $level)
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
 	return '<div id=edit_user_all><h1 id="edit_user-title">'.lang('edit_user_title').' '.$username.'</h1>
-=======
-	return '<h1 id="edit_user-title">'.lang('edit_user_title').' '.$username.'</h1>
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
-	return '<h1 id="edit_user-title">'.lang('edit_user_title').' '.$username.'</h1>
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
   <form action="?'.urlargs('users','update',$id).'" method="post">
   <table>
   <tr><td>'.lang('edit_user_newname').'</td><td><input type="text" value="'.$username.'" name="user"></td></tr>
@@ -476,16 +406,7 @@ abstract class BaseTemplate {
   <tr><td>'.lang('edit_user_newlevel').'</td><td>'.user_level_select($level).'</td></tr>
   <tr><td></td><td><input type="submit" value="'.lang('edit_user_submit_btn').'"></td></tr>
   </table>
-<<<<<<< HEAD
-<<<<<<< HEAD
   </form></div>';
-=======
-  </form>';
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
-  </form>';
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-
     }
 
     function edit_user_page_table_row($id, $user, $password, $level, $current=0)
@@ -502,15 +423,7 @@ abstract class BaseTemplate {
 
     function edit_user_page_table($innerhtml)
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
 	$str = '  <div id=admin_users_all><h1 id="admin_users_title">'.lang('users_list_title').'</h1>
-=======
-	$str = '  <h1 id="admin_users_title">'.lang('users_list_title').'</h1>
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
-	$str = '  <h1 id="admin_users_title">'.lang('users_list_title').'</h1>
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
   <form action="?'.urlargs('users','delete').'" method="post">
    <table class="users">
     <tr>
@@ -526,15 +439,7 @@ abstract class BaseTemplate {
 
 	$str .= '  </table>
   <input type="submit" value="'.lang('users_list_submit_btn').'" />&nbsp;'.lang('users_list_verify').' <input type="checkbox" name="verify" value="1" id="verify_submit"/><label for="verify_submit"></label>
-<<<<<<< HEAD
-<<<<<<< HEAD
  </form></div>
-=======
- </form>
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
- </form>
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 ';
 
 	return $str;
@@ -603,15 +508,7 @@ abstract class BaseTemplate {
 
     function quote_queue_page($innerhtml)
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
 	$str = '<div id=admin_queue_all><h1 id="admin_queue_title">'.lang('quote_queue_admin_title').'</h1>';
-=======
-	$str = '<h1 id="admin_queue_title">'.lang('quote_queue_admin_title').'</h1>';
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
-	$str = '<h1 id="admin_queue_title">'.lang('quote_queue_admin_title').'</h1>';
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 
 	$str .= '  <form action="?'.urlargs('adminqueue','judgement').'" method="post">
    <table width="100%" cellspacing="0" class="admin_queue">';
@@ -621,15 +518,7 @@ abstract class BaseTemplate {
 	$str .= '   </table>
    <input type="submit" value="'.lang('quote_queue_submit_btn').'" />
    <input type="reset" value="'.lang('quote_queue_reset_btn').'" />
-<<<<<<< HEAD
-<<<<<<< HEAD
   </form></div>
-=======
-  </form>
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
-  </form>
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 ';
 
 	return $str;
@@ -639,23 +528,10 @@ abstract class BaseTemplate {
     {
 	$s = ' class="quote_plus" id="quote_plus_'.$quoteid.'"';
 	if (!$canvote) {
-<<<<<<< HEAD
-<<<<<<< HEAD
 	    $url = '<a href="?'.urlargs('vote',$quoteid,'plus').'" '.$s.' title="'.lang('upvote').'">▲</a>';
 	    if ($ajaxy) {
 		return '<script type="text/javascript">
 document.write(\'<a href="javascript:ajax_vote('.$quoteid.',1);" '.$s.' title="'.lang('upvote').'">▲</a>\');
-=======
-=======
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-	    $url = '<a href="?'.urlargs('vote',$quoteid,'plus').'" '.$s.' title="'.lang('upvote').'">+</a>';
-	    if ($ajaxy) {
-		return '<script type="text/javascript">
-document.write(\'<a href="javascript:ajax_vote('.$quoteid.',1);" '.$s.' title="'.lang('upvote').'">+</a>\');
-<<<<<<< HEAD
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 </script><noscript>'.$url.'</noscript>';
 	    }
 	    return $url;
@@ -667,23 +543,10 @@ document.write(\'<a href="javascript:ajax_vote('.$quoteid.',1);" '.$s.' title="'
     {
 	$s = ' class="quote_minus" id="quote_minus_'.$quoteid.'"';
 	if (!$canvote) {
-<<<<<<< HEAD
-<<<<<<< HEAD
 	    $url = '<a href="?'.urlargs('vote',$quoteid,'minus').'" '.$s.' title="'.lang('downvote').'">▼</a>';
 	    if ($ajaxy) {
 		return '<script type="text/javascript">
 document.write(\'<a href="javascript:ajax_vote('.$quoteid.',-1);" '.$s.' title="'.lang('downvote').'">▼</a>\');
-=======
-=======
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-	    $url = '<a href="?'.urlargs('vote',$quoteid,'minus').'" '.$s.' title="'.lang('downvote').'">-</a>';
-	    if ($ajaxy) {
-		return '<script type="text/javascript">
-document.write(\'<a href="javascript:ajax_vote('.$quoteid.',-1);" '.$s.' title="'.lang('downvote').'">-</a>\');
-<<<<<<< HEAD
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 </script><noscript>'.$url.'</noscript>';
 	    }
 	    return $url;
@@ -697,24 +560,12 @@ document.write(\'<a href="javascript:ajax_vote('.$quoteid.',-1);" '.$s.' title="
 	if (isset($CONFIG['login_required']) && ($CONFIG['login_required'] == 1) && !isset($_SESSION['logged_in'])) return '';
 	if ($CONFIG['auto_flagged_quotes'] == 1) return '';
 	if ($canflag)
-<<<<<<< HEAD
-<<<<<<< HEAD
 	    return '<a href="?'.urlargs('flag',$quoteid).'" class="quote_flag" title="'.lang('flagquote').'"></a>';
 	return '<span class="quote_flag" title="'.lang('quote_already_flagged').'"></span>';
-=======
-	    return '<a href="?'.urlargs('flag',$quoteid).'" class="quote_flag" title="'.lang('flagquote').'">X</a>';
-	return '<span class="quote_flag" title="'.lang('quote_already_flagged').'">X</span>';
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
-	    return '<a href="?'.urlargs('flag',$quoteid).'" class="quote_flag" title="'.lang('flagquote').'">X</a>';
-	return '<span class="quote_flag" title="'.lang('quote_already_flagged').'">X</span>';
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
     }
 
     function quote_iter($quoteid, $rating, $quotetxt, $canflag, $canvote, $date=null)
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
 	$str = '<div class="quote_whole" id="q'.$quoteid.'">';
 
        $str.= '    <div class="quote_option-bar">
@@ -746,31 +597,6 @@ document.write(\'<a href="javascript:ajax_vote('.$quoteid.',-1);" '.$s.' title="
 
 
         $str.='</div>
-=======
-=======
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-	$str = '<div class="quote_whole" id="q'.$quoteid.'">
-    <div class="quote_option-bar">
-     <a href="?'.urlargs($quoteid).'" class="quote_number">#'.$quoteid.'</a>'
-	    .' '.$this->quote_upvote_button($quoteid, $canvote)
-	    .' '.'<span class="quote_rating">(<span id="quote_rating_'.$quoteid.'">'.$rating.'</span>)</span>'
-	    .' '.$this->quote_downvote_button($quoteid, $canvote)
-	    .' '.$this->quote_flag_button($quoteid, $canflag)
-	    .' '.edit_quote_button($quoteid);
-
-	if (isset($date)) {
-	    $str .= "     <span class=\"quote_date\">" . $date . "</span>\n";
-	}
-
-	$str .= '
-    </div>
-    <div class="quote_quote">
-     '.$quotetxt.'
-    </div>
-<<<<<<< HEAD
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
    </div>
 ';
 	return $str;
@@ -778,45 +604,21 @@ document.write(\'<a href="javascript:ajax_vote('.$quoteid.',-1);" '.$s.' title="
 
     function quote_list($title, $pagenumbers, $quotes)
     {
-<<<<<<< HEAD
-<<<<<<< HEAD
 	$str = "<div id=main_wrapper>";
-=======
-	$str = '';
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
-	$str = '';
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 	if (isset($title))
 	    $str .= '<h1 id="quote_origin-name">'.$title.'</h1>';
 	$str .= $pagenumbers;
 	$str .= '<div id="quote_list">'.$quotes.'</div>';
 	$str .= '<p>';
 	$str .= $pagenumbers;
-<<<<<<< HEAD
-<<<<<<< HEAD
 	return $str.'</div>';
-=======
-	return $str;
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
-	return $str;
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
     }
 
     function flag_page($quoteid, $quotetxt, $flag)
     {
 	global $CAPTCHA;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 	$str = '<div id=flag_quote_all>';
-=======
-	$str = '';
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
-	$str = '';
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 
 	$str .= '<h1>'.lang('flag_quote_title').'</h1>';
 
@@ -831,25 +633,8 @@ document.write(\'<a href="javascript:ajax_vote('.$quoteid.',-1);" '.$s.' title="
 	    $str .= $CAPTCHA->get_CAPTCHA('flag');
 	    $str .= '<input type="submit" value="'.lang('flag_quote_submit_btn').'" />
    <input type="reset" value="'.lang('flag_quote_reset_btn').'" />
-<<<<<<< HEAD
-<<<<<<< HEAD
   </form></div>';
-=======
-  </form>';
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
-  </form>';
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
 	}
 	return $str;
     }
-
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
-=======
-}
->>>>>>> 0fc100197a68d98d974026081f808031e2fea442
